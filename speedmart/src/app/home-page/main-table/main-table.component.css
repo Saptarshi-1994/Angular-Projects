@@ -1,0 +1,51 @@
+.padding-delivery-list {
+    padding-left: 315px;
+    padding-right: 66px;
+  }
+  
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  #customers td {
+    padding: 5px;
+    border-right: 1px solid black;
+  }
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  
+    color: black;
+  }
+  
+  .red-row {
+    background-color: coral;
+  }
+  
+  #customers thead tr:first-child th {
+    border-top: 0;
+  }
+  #customers tr:last-child td {
+    border-bottom: 0;
+  }
+  #customers tr td:first-child,
+  #customers tr th:first-child {
+    border-left: 0;
+  }
+  #customers tr td:last-child,
+  #customers tr th:last-child {
+    border-right: 0;
+  }
+  
+  #customers tbody tr {
+    border-bottom: 1px solid white;
+  }

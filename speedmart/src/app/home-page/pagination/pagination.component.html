@@ -1,0 +1,28 @@
+<!-- pagination -->
+<div
+  class="pagination padding-delivery-list position-fixed"
+  *ngIf="totalDeliveryList && totalDeliveryList.length > 10"
+>
+  <ng-container
+    *ngFor="let eachPage of numberOfPages.pageNumbers; let pageIndex = index"
+  >
+    <a *ngIf="pageIndex === 0"(click)="selectNextOrPrevPage('PREV')"
+      >&laquo;</a
+    >
+
+    <a
+      *ngIf="pageIndex > 0 && pageIndex < numberOfPages.pageNumbers.length - 1"
+      (click)="changePage(eachPage)"
+      [ngClass]="{
+        'pagination-selected': numberOfPages.currentPage === eachPage
+      }"
+      >{{ eachPage }}</a
+    >
+
+    <a
+      *ngIf="pageIndex === numberOfPages.pageNumbers.length - 1"
+      (click)="selectNextOrPrevPage('NEXT')"
+      >&raquo;</a
+    >
+  </ng-container>
+</div>

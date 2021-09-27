@@ -1,0 +1,30 @@
+.mirror-right {
+  transform: scaleX(-1);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.delivery-list-header {
+  text-align: center;
+  font-family: cursive;
+  color: red;
+}
+
+.santa-img-padding {
+  padding-left: 60px;
+}
+
+/* delivery list CSS */
+
+
+/* pagination CSS */

@@ -1,0 +1,23 @@
+<!-- nav bar left -->
+<app-side-navbar></app-side-navbar>
+
+<!-- pine div -->
+<div class="mirror-right">
+  <img src="../../assets/images/pine_branch.png" style="width: 280px" />
+</div>
+
+<!-- main header -->
+<div class="align-center">
+  <h1 class="delivery-list-header">Delivery List</h1>
+</div>
+
+<!-- main table -->
+<app-main-table [deliveryList]="deliveryList"></app-main-table>
+
+<!-- pagination -->
+<app-pagination
+  [totalDeliveryList]="totalDeliveryList"
+  [numberOfPages]="numberOfPages"
+  (displayPageNumber)="selectPageItems($event)"
+>
+</app-pagination>

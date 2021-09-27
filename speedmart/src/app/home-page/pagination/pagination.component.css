@@ -1,0 +1,23 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #006400;
+  float: left;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.pagination-selected {
+  color: red !important;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.padding-delivery-list {
+  padding-left: 315px;
+  padding-right: 66px;
+}

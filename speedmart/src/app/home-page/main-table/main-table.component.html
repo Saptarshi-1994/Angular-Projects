@@ -1,0 +1,27 @@
+<!-- main table -->
+<div
+  class="padding-delivery-list"
+  *ngIf="deliveryList && deliveryList.length > 0"
+>
+  <table id="customers">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Wishes</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <ng-container *ngFor="let eachListObj of deliveryList">
+        <tr [ngClass]="{ 'red-row': eachListObj.isPoorlyBehaved }">
+          <td>{{ eachListObj.firstName }}</td>
+          <td>{{ eachListObj.lastName }}</td>
+          <td>{{ eachListObj.address }}</td>
+          <td>{{ eachListObj.wishes }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
